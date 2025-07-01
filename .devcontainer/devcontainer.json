@@ -1,0 +1,21 @@
+{
+  "name": "Ruby on Rails Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "rebornix.Ruby",
+        "castwide.solargraph",
+        "ms-azuretools.vscode-docker",
+        "bung87.rails"
+      ]
+    }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "bundle install && bin/rails db:setup && bin/rails db:seed || true"
+}
