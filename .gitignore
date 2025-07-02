@@ -45,7 +45,7 @@
 .vscode/
 
 # Ignore secret seeds (if any)
-/db/seeds.rb
+#/db/seeds.rb
 
 # Ignore coverage reports
 /coverage/
